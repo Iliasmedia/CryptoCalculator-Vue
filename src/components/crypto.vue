@@ -27,10 +27,10 @@
 			</div>
 			<div class="wallet_future">
 				<h3>Estimated results</h3>
-			  <p>New balance <span class="box dollar">{{ newBalance | round }}</span></p>
+			  <p>New balance <span class="box dollar">{{ newBalance | round | currency}}</span></p>
 				<p>Coins/Tokens <span class="box dollar">{{ tokens | round }}</span></p>
 				<div class="winloss">
-					<p>Profit <span class="box green dollar">{{ profit | round }}</span></p>
+					<p>Profit <span class="box green dollar">{{ profit | round | currency }}</span></p>
 					<p>Multiplier <span class="box green">{{ multiplier | round }}x</span></p>
 					<p>Percent <span class="box green">{{ percent | round }}%</span></p> 
 				</div>
