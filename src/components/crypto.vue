@@ -8,14 +8,14 @@
 				<h3>Fill the fields in</h3>
 				<p>Invested money <input  class="dollar" type="number" min="0.01" name="wallet" v-model="invested"></p>
 				<p v-if="toggleHandler == false">
-          Price per coin/token before <input  class="dollar" type="number" name="wallet" value="0.001" v-model="tokenBefore">
+          Price per coin/token before <input  class="dollar" type="number" name="wallet"  v-model="tokenBefore">
         </p>
         <p v-else>
             <select v-model="selectedValue">
               <option v-for="crypto in cryptos" :key="crypto.id" :value="crypto.quotes.USD.price">{{ crypto.name }} - {{ crypto.symbol }}</option>
             </select>
-            <span class="box dollar" style="background-color:#fad390">
-              {{ properToken }}
+            <span class="box " style="background-color:#fad390">
+             ${{ properToken }}
             </span>
         </p>
 
