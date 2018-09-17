@@ -124,7 +124,7 @@ export default {
         if(this.toggleHandler == false) {
           return this.tokenBefore;
          } else {
-          return this.rounded(this.selectedValue, 2);
+          return this.rounded(this.selectedValue, 3);
         }
     }
   }
